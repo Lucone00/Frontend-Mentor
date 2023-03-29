@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "HankenGrotesk";
+  src: url(/Users/Luca/Desktop/results-summary-component-main/assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+#container {
+  width: 45%;
+  height: 65vh;
+  background: white;
+  margin: 0 auto;
+  margin-top: 5%;
+  display: flex;
+  border-radius: 20px;
+  box-shadow: 5px 6px 27px -10px rgba(50, 51, 87, 0.9);
+  font-family: "HankenGrotesk", sans-serif;
+}
+
+.left-part {
+  width: 50%;
+  background: linear-gradient(
+    to bottom, 
+    rgb(120, 87, 255), 
+    rgb(46, 43, 233)
+  );
+  border-radius: 20px;
+  text-align: center;
+}
+
+.left-title {
+  color: rgb(200, 199, 255);
+  margin-top: 25px;
+  font-size: 20px;
+}
+
+.result {
+  width: 160px;
+  height: 160px;
+  background: linear-gradient(
+    to bottom,
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+  margin: 0 auto;
+  border-radius: 50%;
+  margin-top: 30px;
+  position: relative;
+}
+
+.number-scored {
+  font-size: 60px;
+  color: white;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 800;
+}
+
+.total-score {
+  font-size: 14px;
+  color: rgba(200, 199, 255, 0.521);
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.score {
+  color: white;
+  font-size: 25px;
+  margin-top: 25px;
+  padding: 1rem;
+}
+
+.description {
+  margin: 0 auto;
+  width: 70%;
+  color: rgb(200, 199, 255);
+  padding: 0.5rem;
+  font-size: 15px;
+}
+
+/* right part */
+
+.right-part {
+  margin: 0 auto;
+  width: 40%;
+  height: 100%;
+}
+
+.right-title {
+  color: rgb(48, 59, 89);
+  margin-top: 25px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: bolder;
+}
+
+.block {
+  margin-top: 25px;
+  width: 100%;
+  height: 60%;
+}
+.block1,
+.block2,
+.block3,
+.block4 {
+  width: 100%;
+  height: 18%;
+  margin-top: 15px;
+  border-radius: 10px;
+  display: flex;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.skill {
+  padding: 0.7rem;
+}
+
+.scored {
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 15px;
+  color: rgb(48, 59, 89);
+  font-weight: 600;
+}
+.cento {
+  color: rgba(48, 59, 89, 0.5);
+}
+
+.block1 {
+  color: hsl(0, 100%, 67%);
+  background-color: hsla(0, 100%, 67%, 0.15);
+}
+.block2 {
+  color: hsl(39, 100%, 56%);
+  background-color: hsla(39, 100%, 56%, 0.15);
+}
+.block3 {
+  color: hsl(166, 100%, 37%);
+  background-color: hsla(166, 100%, 37%, 0.15);
+}
+.block4 {
+  color: hsl(234, 85%, 45%);
+  background-color: hsla(234, 85%, 45%, 0.15);
+}
+
+/*continue */
+.continue {
+  width: 100%;
+  height: 12%;
+  background-color: rgb(48, 59, 89);
+  color: white;
+  margin: 0 auto;
+  margin-top: 10px;
+  border-radius: 50px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+}
+
+.p-continue {
+  display: flex;
+  align-items: center;
+}
+
+.continue:hover {
+  background: linear-gradient(
+    to bottom,
+    rgb(120, 87, 255), 
+    rgb(46, 43, 233));
+}
+
+/* Media query */
+/* iphon 12 pro = width 390px */
+
+@media (max-width: 414px) {
+  #container {
+    width: 100%;
+    height: 100vh;
+    display: block;
+    margin-top: 0;
+  }
+
+  .left-part {
+    width: 100%;
+    height: 43%;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    text-align: center;
+  }
+  .left-title {
+    margin-top: 0;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+  }
+  .result {
+    margin-top: 15px;
+  }
+  .total-score {
+    font-size: 16px;
+    top: 75%;
+  }
+  .score {
+    margin-top: 10px;
+    padding: 0.6rem;
+  }
+
+  .right-part {
+    height: 60%;
+    width: 80%;
+  }
+}
